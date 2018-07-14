@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Form</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<script src="Controller.js"></script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="formCtrl">
+		<form name="myForm">
+		<table>
+			<tr>
+
+				<td>Your First Name : </td>
+				<td><input type="text" ng-model="myForm.fName"></td>
+			</tr>
+			<tr>
+				<td>Last Name : </td>
+				<td><input type="text" ng-model="myForm.lName"></td>
+			</tr>
+			<tr>
+				<td>Father Name : </td>
+				<td><input type="text" ng-model="myForm.faName"></td>
+			</tr>
+			<tr>
+
+				<td>Country : </td>
+				<td><input type="text" ng-model="myForm.country"></td>
+			</tr>
+			<tr>
+				<td>Email : </td>
+				<td><input type="text" ng-model="myForm.mail"></td>
+			</tr>
+			<tr>
+
+				<td>Gender : </td>
+				<td><input type="text" ng-model="myForm.gender"></td>
+			</tr>
+			<tr>
+				<td>Date of Birth : </td>
+				<td><input type="text" ng-model="myForm.dob"></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="submit" ng-click="submit()">
+				</td>
+			</tr>
+		</table>
+		
+		</form>
+	</div>
+</body>
+</html>
